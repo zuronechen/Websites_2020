@@ -38,10 +38,26 @@
   </head>
 
   <body>
+    <!-- Top Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#">Hello <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#">Resume</a>
+          <a class="nav-item nav-link" href="#">Fun</a>
+          <!-- <a class="nav-item nav-link disabled" href="#">Disabled</a>-->
+        </div>
+      </div>
+    </nav>
+
+    <!-- Some Self Introduction -->
     <div class="mainContainer">
-        <div class="row" id="introductionContainer">
+        <section name="introductionSection" class="introductionSection">
             <div class="col-md-6">
-                <h1 id="sectionHeader">Zurone Chen</h1>
+                <h1 class="sectionHeader">Zurone Chen</h1>
                 <h2>aspiring software engineer</h2>
                 <h2>amateur artist</h2>
                 <h2>powerlifter for fun</h2>
@@ -49,21 +65,24 @@
             <div class="col-md-6">
                 <img src="images/profilePicture.jpg" alt="Zurone_Chen_Portrait" width="150px">
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <h1 id="sectionHeader">Skills</h1>
-                <img src="images/HTML.png" alt="html-icon">
-                <img src="images/CSS.png" alt="css-icon">
-                <img src="images/JS.png" alt="js-icon">
-                <img src="images/PY.png" alt="py-icon">
+          </section>
+        <section name="skillsSection" class="skillsSection">
+            <div class="col-md-12">
+                <h1 class="sectionHeader">Skills</h1>
+                <img id="skillsIcon" src="images/HTML.png" alt="html-icon">
+                <img id="skillsIcon" src="images/CSS.png" alt="css-icon">
+                <img id="skillsIcon" src="images/JS.png" alt="js-icon">
+                <img id="skillsIcon" src="images/PY.png" alt="py-icon">
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <h1 id="sectionHeader">Art</h1>
-            </div>
-        </div>
+          </section>
+        <section name="artSection" class="artSection">
+            <div class="col-md-12">
+                <h1 class="sectionHeader">Art</h1>
+                <img id="artImage" src="images/anne.png" alt="anne">
+                <img id="artImage" src="images/overwatch.jpg" alt="overwatch">
+                <img id="artImage" src="images/mercy.jpg" alt="archer">
+              </div>
+            </section>
     </div>
   </body>
 </html>

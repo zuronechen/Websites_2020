@@ -29,14 +29,44 @@ body{
     padding: 0;
 }
 
+/*Top Navigation Bar*/
+.navbar{
+    background-color: none;
+}
+
+.navbar .navbar-nav{
+    margin: auto;
+    vertical-align: middle;
+}
+
+.navbar .nav-item{
+    font-size: 20px;
+}
+
+
+/*Self Introduction*/
 .mainContainer{
-    margin: 10%;
+    margin: 5%;
 }
 
-.row{
-    margin-bottom: 5%;
+section{
+    margin-bottom: 100px;
 }
 
-#sectionHeader{
+.sectionHeader{
     font-size: 50px;
+}
+
+/*Skills*/ 
+#skillsIcon{
+    margin-right: 10px;
+}
+
+#skillsIcon:hover{
+    opacity: 0.8;
+}
+
+#artImage{
+    width: 380px;
+    margin-right: 8px;
 }

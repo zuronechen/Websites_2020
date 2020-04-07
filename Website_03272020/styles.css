@@ -17,16 +17,15 @@ html{
 }
 
 body{
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
     overflow-y: scroll;
     overflow-x: hidden;
     width: 100%;
     height: 100%;
-    background: #f0f0f0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-color: #ebebeb !important; */
     margin: 0;
     padding: 0;
+    cursor: url('images/grayCursor.svg'), auto;	
 }
 
 /*Top Navigation Bar*/
@@ -43,30 +42,73 @@ body{
     font-size: 20px;
 }
 
-
-/*Self Introduction*/
 .mainContainer{
     margin: 5%;
 }
 
-section{
+.row{
     margin-bottom: 100px;
+}
+/*Introduction*/
+
+.introductionText{
+    float: right;
+    text-align: right;
+    margin-top: 15px;
 }
 
 .sectionHeader{
     font-size: 50px;
+    text-align: center;
 }
 
-/*Skills*/ 
-#skillsIcon{
-    margin-right: 10px;
+/*Art*/
+
+.link{
+    color: #5b7bb8;
+}
+.link:hover{
+    text-decoration: none;
+    color: #bc7da3;
 }
 
-#skillsIcon:hover{
-    opacity: 0.8;
+.artImageWrapper{
+    display: block;
+    text-align: center;
 }
 
 #artImage{
-    width: 380px;
-    margin-right: 8px;
+    width: 340px;   
+    margin: 10px;
+    transition: transform .3s; /* Animation */
 }
+
+#artImage:hover{
+    transform: scale(1.2);
+    cursor: url('images/blueCursor.svg'), auto;	
+}
+/*Skills*/ 
+
+.skillsIconWrapper{
+    display: block;
+    text-align: center;
+}
+
+#skillsIcon{
+    margin: 20px;
+    max-width: 80px;
+    transition: transform .3s; /* Animation */
+}
+
+#skillsIcon:hover{
+    transform: scale(1.2);
+    cursor: url('images/blueCursor.svg'), auto;	
+}
+
+/*Resume*/
+
+.resumeWrapper{
+    display: block;
+    text-align: center;
+}
+

@@ -1,88 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
-      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Teko"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <!-- Latest compiled and minified CSS -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    />
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+    integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
 
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  </head>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
-  <body>
-    <!-- Top Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#">Hello <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#">Resume</a>
-          <a class="nav-item nav-link" href="#">Fun</a>
-          <!-- <a class="nav-item nav-link disabled" href="#">Disabled</a>-->
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <!-- Top Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="#">hello<span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="#">resume</a>
+        <a class="nav-item nav-link" href="#">fun</a>
+        <!-- <a class="nav-item nav-link disabled" href="#">Disabled</a>-->
+      </div>
+    </div>
+  </nav>
+
+  <!-- Some Self Introduction -->
+  <div class="mainContainer">
+    <section name="introductionSection" class="introductionSection">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="introductionText">
+            <!--<h1 class="sectionHeader">Zurone Chen</h1>-->
+            <img src="images/zuroneChenLogo.svg" alt="My name is Zurone Chen" width="350px"></img>
+            <br>
+            <br>
+            <h2>amateur artist</h2>
+            <h2>aspiring software engineer</h2>
+            <h2>powerlifter for fun</h2>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img src="images/profilePicture5.jpg" alt="Zurone_Chen_Portrait" width="180px"
+            style="border-radius: 50%;" />
         </div>
       </div>
-    </nav>
+    </section>
+    <section name="artSection" class="artSection">
+      <h1 class="sectionHeader">Art</h1>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="artImageWrapper">
+            <h2>check out more of my <a class="link" href="https://www.instagram.com/jerome_orjosie/" target="_blank">art</a></h2>
+            <br>
+            <br>
+            <img id="artImage" src="images/anne.png" alt="anne" />
+            <img id="artImage" src="images/overwatch.jpg" alt="overwatch" />
+            <img id="artImage" src="images/mercy.jpg" alt="archer" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section name="skillsSection" class="skillsSection">
+      <h1 class="sectionHeader">Skills</h1><br><br>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="skillsIconWrapper">
+            <img id="skillsIcon" src="images/HTML.png" alt="html-icon" />
+            <img id="skillsIcon" src="images/CSS.png" alt="css-icon" />
+            <img id="skillsIcon" src="images/JS.png" alt="js-icon" />
+            <img id="skillsIcon" src="images/PY.png" alt="py-icon" />
+          </div>
 
-    <!-- Some Self Introduction -->
-    <div class="mainContainer">
-        <section name="introductionSection" class="introductionSection">
-            <div class="col-md-6">
-                <h1 class="sectionHeader">Zurone Chen</h1>
-                <h2>aspiring software engineer</h2>
-                <h2>amateur artist</h2>
-                <h2>powerlifter for fun</h2>
-            </div>
-            <div class="col-md-6">
-                <img src="images/profilePicture.jpg" alt="Zurone_Chen_Portrait" width="150px">
-            </div>
-          </section>
-        <section name="skillsSection" class="skillsSection">
-            <div class="col-md-12">
-                <h1 class="sectionHeader">Skills</h1>
-                <img id="skillsIcon" src="images/HTML.png" alt="html-icon">
-                <img id="skillsIcon" src="images/CSS.png" alt="css-icon">
-                <img id="skillsIcon" src="images/JS.png" alt="js-icon">
-                <img id="skillsIcon" src="images/PY.png" alt="py-icon">
-            </div>
-          </section>
-        <section name="artSection" class="artSection">
-            <div class="col-md-12">
-                <h1 class="sectionHeader">Art</h1>
-                <img id="artImage" src="images/anne.png" alt="anne">
-                <img id="artImage" src="images/overwatch.jpg" alt="overwatch">
-                <img id="artImage" src="images/mercy.jpg" alt="archer">
-              </div>
-            </section>
-    </div>
-  </body>
+        </div>
+      </div>
+    </section>
+    <section name="resumeSection" class="resumeSection">
+      <h1 class="sectionHeader">Resume</h1><br><br>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="resumeWrapper">
+            <h2>check out my <a class="link" href=https://drive.google.com/file/d/1t_nlZLfJQt70d3VRGLxlVAa5WarUXVUl/view?usp=sharing" target="_blank">resume</a></h2>
+            <br><br>
+            <img id="resumeImage" src="images/resume.svg" alt="resume">  
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
 </html>

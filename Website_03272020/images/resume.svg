@@ -1,0 +1,15 @@
+<svg width="203" height="250" viewBox="0 0 203 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M25 2.5H200.5V225C200.5 237.426 190.426 247.5 178 247.5H2.5V25C2.5 12.5736 12.5736 2.5 25 2.5Z" stroke="#5B7BB8" stroke-width="5"/>
+<rect x="28" y="27" width="29" height="29" fill="#5B7BB8"/>
+<rect x="28" y="80" width="29" height="29" fill="#E8AC52"/>
+<rect x="28" y="136" width="29" height="29" fill="#77BB96"/>
+<rect x="28" y="188" width="29" height="29" fill="#BC7DA3"/>
+<line x1="78" y1="33.5" x2="178" y2="33.5" stroke="#5B7BB8" stroke-width="7"/>
+<line x1="78" y1="51" x2="178" y2="51" stroke="#5B7BB8" stroke-width="10"/>
+<line x1="78" y1="86.5" x2="178" y2="86.5" stroke="#5B7BB8" stroke-width="7"/>
+<line x1="78" y1="104" x2="178" y2="104" stroke="#5B7BB8" stroke-width="10"/>
+<line x1="78" y1="142.5" x2="178" y2="142.5" stroke="#5B7BB8" stroke-width="7"/>
+<line x1="78" y1="160" x2="178" y2="160" stroke="#5B7BB8" stroke-width="10"/>
+<line x1="78" y1="194.5" x2="178" y2="194.5" stroke="#5B7BB8" stroke-width="7"/>
+<line x1="78" y1="212" x2="178" y2="212" stroke="#5B7BB8" stroke-width="10"/>
+</svg>

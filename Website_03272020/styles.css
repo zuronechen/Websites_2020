@@ -37,7 +37,7 @@ body{
 
 /*Top Navigation Bar*/
 .navbar{
-    background-color: none;
+    background-color: #A1A6D3;
 }
 
 .navbar .navbar-nav{
@@ -48,6 +48,9 @@ body{
 .navbar .nav-item{
     font-size: 20px;
     color: #ededed !important; 
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .navbar .nav-item:hover{
@@ -64,11 +67,21 @@ body{
 }
 /*Introduction*/
 
+#introductionSection{
+    margin-top: -30px;
+    padding-top: 100px;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #A1A6D3; 
+}
+
 .introductionText{
     float: right;
     text-align: right;
     margin-top: 15px;
-    color: #ededed;
+    color: #232323;
+    /* color: #ededed; */
 }
 
 .sectionHeader{
@@ -77,8 +90,13 @@ body{
 }
 
 /*Art*/
+#artSection{
+    background-color: #5b5e80;
+    height: 100vh;
+    position: relative;
+}
 
-.artSection h2{
+#artSection h2{
     color: #ededed;
 }
 
@@ -95,10 +113,11 @@ body{
 }
 
 #artImage{
-    width: 250px;   
-    margin-right: 10px;
+    display: block;  
+    max-width: 280px;
     opacity: 0.7;
     transition: transform .3s; /* Animation */
+    margin: 10px;
 }
 
 #artImage:hover{
@@ -107,12 +126,17 @@ body{
     cursor: url('images/blueCursor.svg'), auto;	
 }
 /*Skills*/ 
-.skillsSection h2{
-    color: #ededed;
-}
 
-.skillsIconWrapper{
-    display: block;
+#skillsSection{
+    background-color: #282a40;
+    height: 100vh;
+}
+#skillsSection .skillList{
+    padding: 10px;
+}
+ 
+#skillsSection h2{
+    color: #ededed;
 }
 
 #skillsIcon{
@@ -128,8 +152,20 @@ body{
     cursor: url('images/blueCursor.svg'), auto;	
 }
 
+#skillsSection ul li{
+    list-style: none;
+    font-size: 3vh;
+    font-weight: bold;
+} 
+
 /*Hello*/
-.helloSection h2{
+
+#helloSection{
+    background-color: #11131f;
+    height: 100vh;
+}
+
+#helloSection h2{
     color: #ededed;
 }
 

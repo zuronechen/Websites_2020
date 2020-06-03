@@ -50,12 +50,12 @@ body{
     color: #fff !important; 
 }
 
-.row{
+section{
     padding-top: 50px;
     padding-bottom: 100px;
     width: 100%;
     padding-left: 70px;
-    padding-right: 50px;
+    padding-right: 60px;
 }
 /*Introduction*/
 
@@ -84,7 +84,6 @@ body{
 
 /*Art*/
 #artSection{
-    height: 100vh;
     position: relative;
     background-color: white;
 }
@@ -101,25 +100,22 @@ body{
     color: #D97F4D;
 }
 
-.artImageWrapper{
-    display: block;
-}
-
 #artImage{
     display: block;  
     max-width: 500px;
     transition: transform .3s; /* Animation */
-    margin: 10px;
+    margin-top: 20px;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 #artImage:hover{
     transform: scale(1.1);
     cursor: url('images/blueCursor.svg'), auto;	
+    box-shadow: none;
 }
 /*Skills*/ 
 
 #skillsSection{
-    height: 100vh;
     background-color: white;
     position: relative;
 }
@@ -131,38 +127,28 @@ body{
     color: #0f1147;
 }
 
-#skillsIcon{
-    margin: 20px;
-    max-width: 200px;
-    opacity: 0.7;
-    transition: transform .3s; /* Animation */
-}
-
-#skillsIcon:hover{
-    transform: scale(1.2);
-    opacity: 1;
-    cursor: url('images/blueCursor.svg'), auto;	
-}
-
 #skillsSection ul li{
     list-style: none;
     font-size: 3vh;
     font-weight: bold;
 } 
 
+#skillsColumn{
+    border: 1px solid pink;
+}
+
 /*Hello*/
 
 #helloSection{
-    height: 100vh;
     background-color: white;
     position: relative;
 }
 
 #helloSection h2{
-    color: #ededed;
+    color: #0f1147;
 }
 
 .helloWrapper p{
-    color: #ededed;
+    color: #0f1147;
     font-size: 20px;
 }

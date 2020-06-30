@@ -1,19 +1,17 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
-
-
-/*General Styles*/
-
-/*
-Commonly used colors: 
-gray (background): #f7f5f4
-dark: #232323, #343434
-pink: #c65151
-purple: #b06f87
-*/
-
 html{
     width: 100%;
     height: 100%;
+}
+
+
+@font-face {
+    font-family: GothamPro;
+    src: url(GothamPro-Medium.eot);
+    src: url(gothamFont/GothamPro-Medium.woff2) format("woff2"),url(gothamFont/GothamPro-Medium.woff) 
+    format("woff"),url(gothamFont/GothamPro-Medium.ttf) format("truetype"),url(gothamFont/GothamPro-Medium.svg#GothamPro-Medium) format("svg"),
+    url(gothamFont/GothamPro-Medium.eot?#iefix) format("embedded-opentype");
+    font-weight: 400;
+    font-style: normal;
 }
 
 body{
@@ -23,9 +21,12 @@ body{
     height: 100%;
     margin: 0;
     padding: 0;
-    cursor: url('images/grayCursor.svg'), auto;	
-    background-color: #bfd9db !important;
+    cursor: url('images/blueCursor.svg'), auto;	
+    font-family: 'GothamPro' !important;
+    background: #101526 !important;
+    color: #b9e9ed !important;
 }
+
 
 /*Top Navigation Bar*/
 .navbar{
@@ -42,7 +43,7 @@ body{
     padding: 20px;
     margin-left: 10px;
     margin-right: 10px;
-    color: #0f1147 !important;
+    color: white !important;
 }
 
 .navbar .nav-item:hover{
@@ -56,7 +57,42 @@ section{
     width: 100%;
     padding-left: 70px;
     padding-right: 60px;
+    text-align: center;
+    justify-content: center;
+    position: relative;
 }
+
+.row{
+    padding: 80px 100px 10px 100px; /*top right bottom left*/
+}   
+
+/* Icons */
+
+.foxIcon{
+    max-width: 150px;
+}
+
+.skillIcon{
+    height: 120px;
+    transition: transform .3s; /* Animation */
+    margin-bottom: 10px;
+}
+
+.skillIcon:hover{
+    transform: scale(1.1);
+    cursor: url('images/blueCursor.svg'), auto;	
+}
+
+.skillCaption {
+    display: block;
+    font-size: 2em;
+}
+
+#skillRow{
+    padding: 80px 170px 10px 170px; /*top right bottom left*/
+
+}
+
 /*Introduction*/
 
 #introductionSection{
@@ -65,31 +101,21 @@ section{
     width: 100%;
     height: 100vh;
     position: relative;
-    background-image: url("images/fox_background2.png");
-    background-size: cover;
-    background-position: center bottom;
     bottom: 0;
+    text-align: center;
 }
 
 .introductionText{
-    text-align: left;
-    color: #0f1147;
-    /* color: #ededed; */
+    text-align: center;
 }
 
 .sectionHeader{
     font-size: 50px;
-    color: #0f1147;
 }
 
 /*Art*/
 #artSection{
     position: relative;
-    background-color: white;
-}
-
-#artSection h2{
-    color: #0f1147;
 }
 
 .link{
@@ -100,15 +126,15 @@ section{
     color: #D97F4D;
 }
 
-#artImage{
-    display: block;  
-    max-width: 500px;
+.artImage{
+    display: inline-block;  
+    max-width: 220px;
     transition: transform .3s; /* Animation */
-    margin-top: 20px;
     box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
 }
 
-#artImage:hover{
+.artImage:hover{
     transform: scale(1.1);
     cursor: url('images/blueCursor.svg'), auto;	
     box-shadow: none;
@@ -116,15 +142,7 @@ section{
 /*Skills*/ 
 
 #skillsSection{
-    background-color: white;
     position: relative;
-}
-#skillsSection .skillList{
-    padding: 10px;
-}
- 
-#skillsSection h2{
-    color: #0f1147;
 }
 
 #skillsSection ul li{
@@ -133,22 +151,10 @@ section{
     font-weight: bold;
 } 
 
-#skillsColumn{
-    border: 1px solid pink;
+#skillsSection .skillList{
+    padding: 5px;
+    margin: 10px;
+    border-radius: 20px;
 }
 
 /*Hello*/
-
-#helloSection{
-    background-color: white;
-    position: relative;
-}
-
-#helloSection h2{
-    color: #0f1147;
-}
-
-.helloWrapper p{
-    color: #0f1147;
-    font-size: 20px;
-}

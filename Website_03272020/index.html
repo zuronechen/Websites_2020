@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+  <link
+    rel="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css">
 
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -30,98 +32,92 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="#">art<span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="#">skills</a>
-        <a class="nav-item nav-link" href="#">hello</a>
+        <a class="nav-item nav-link active" href="#"><i class="fa fa-github"></i><span
+            class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="#"><i class="fa fa-envelope"></i></a>
+        <a class="nav-item nav-link" href="#"><i class="fa fa-linkedin"></i></a>
         <!-- <a class="nav-item nav-link disabled" href="#">Disabled</a>-->
       </div>
     </div>
   </nav>
 
-  <!-- Some Self Introduction -->
+  <!--Self Introduction -->
   <div class="mainContainer">
 
     <section name="introductionSection" class="clearfix" id="introductionSection">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="introductionText">
-            <h1 style="font-size: 9vh; font-weight: bold;">Zurone Chen</h1>
-            <h2>amateur artist / aspiring software engineer</h2>
-          </div>
-        </div>
-        <div class="col-md-6">
-        </div>
+      <img class="foxIcon" src="images/foxGlasses.svg" alt="fox with glasses">
+      <div class="introductionText">
+        <h1 style="font-size: 9vh;">Zurone Chen</h1>
+        <h3>amateur artist / engineering student</h3>
       </div>
     </section>
-    <section name="artSection" class="clearfix" id="artSection">
-      <h1 class="sectionHeader">Art</h1>
-      <h2>more <a class="link"
-        href="https://www.instagram.com/jerome_orjosie/"
-        target="_blank">art</a></h2>
-      <div class="row">
-        <div class="col-md-6">
-          <img id="artImage" src="images/mercyColored.png" alt="anne"/>
-        </div>
-        <div class="col-md-6">
-          <img id="artImage" src="images/overwatchColored.png" alt="anne"/>
-        </div>
-      </div>
-  </section>
-  <section name="skillsSection" class="clearfix" id="skillsSection">
+
+    <section name="skillsSection" class="clearfix" id="skillsSection">
       <h1 class="sectionHeader">skills</h1>
-      <h2>my <a class="link"
-        href="https://drive.google.com/file/d/1t_nlZLfJQt70d3VRGLxlVAa5WarUXVUl/view?usp=sharing"
-        target="_blank">resume</a></h2>
-    <div class="row">
-      <div class="col-md-4" id="skillsColumn">
-        <div class="skillList">
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-          </ul>
+      <h2>click for <a class="link"
+          href="https://drive.google.com/file/d/1t_nlZLfJQt70d3VRGLxlVAa5WarUXVUl/view?usp=sharing"
+          target="_blank">resume</a></h2>
+      <div class="row justify-content-center" id="skillRow">
+        <div class="col-md-4">
+          <img class="skillIcon" src="images/pythonIcon.png" alt="">
+          <span class="skillCaption">python</span>
+        </div>
+        <div class="col-md-4">
+          <img class="skillIcon" src="images/csharpIcon.png" alt="">
+          <span class="skillCaption">c#</span>
+        </div>
+        <div class="col-md-4">
+          <img class="skillIcon" src="images/javaIcon.png" alt="">
+          <span class="skillCaption">html</span>
         </div>
       </div>
-      <div class="col-md-4" id="skillsColumn">
-        <div class="skillList">
-          <ul>
-            <li>Python</li>
-            <li>Java</li>
-            <li>C++</li>
-          </ul>
+      <div class="row justify-content-center" id="skillRow">
+        <div class="col-md-4">
+          <img class="skillIcon" src="images/psIcon.png" alt="">
+          <span class="skillCaption">python</span>
+        </div>
+        <div class="col-md-4">
+          <img class="skillIcon" src="images/htmlIcon.png" alt="">
+          <span class="skillCaption">c#</span>
+        </div>
+        <div class="col-md-4">
+          <img class="skillIcon" src="images/cssIcon.png" alt="">
+          <span class="skillCaption">html</span>
         </div>
       </div>
-      <div class="col-md-4" id="skillsColumn">
-        <div class="skillList">
-          <ul>
-            <li>Tableau</li>
-            <li>Hadoop</li>
-            <li>Photoshop</li>
-          </ul>
-        </div>
-      </div>
-      </div>
+  </div>
   </section>
+
+  <section name="artSection" class="clearfix" id="artSection">
+    <h1 class="sectionHeader">Art</h1>
+    <h2>click for more <a class="link" href="gallery.html" target="_blank">art</a></h2>
+    <div class="row justify-content-center">
+      <div class="col-md-3">
+        <img class="artImage" src="images/mercy.jpg" alt="">
+        <span class="skillCaption">mercy</span>
+      </div>
+      <div class="col-md-3">
+        <img class="artImage" src="images/anne.png" alt="">
+        <span class="skillCaption">anne</span>
+      </div>
+      <div class="col-md-3">
+        <img class="artImage" src="images/passion.png" alt="">
+        <span class="skillCaption">passion</span>
+      </div>
+      <div class="col-md-3">
+        <img class="artImage" src="images/overwatch.jpg" alt="">
+        <span class="skillCaption">overwatch</span>
+      </div>
+    </div>
+  </section>
+
   <section name="helloSection" class="clearfix" id="helloSection">
     <h1 class="sectionHeader">hello</h1>
-        <h2>a little about me</h2>
-    <div class="row">
-      <div class="col-md-6">
-        <img src="images/profPic1.jpg" alt="" width="300px">
-      </div>
-      <div class="col-md-6">
-        <div class="helloWrapper">
-          <p>I'm Zurone. I like to draw. I like to code. I love powerlifting.</p>
-          <p>I am currently seeking internships or employment. My superiors and coworkers 
-            would describe me as hardworking, eager to learn, and adaptable. 
-            If you would like to chat with me, hit me up :)
-          </p>
-        </div>
-      </div>
-      </div>
+    <h2>I'm Zurone. I like to draw and code. Hit me up if you want.</h2>
   </section>
+
   </div>
-</div>
+  </div>
 </body>
 
 </html>

@@ -23,14 +23,14 @@ body{
     padding: 0;
     cursor: url('images/blueCursor.svg'), auto;	
     font-family: 'GothamPro' !important;
-    background: #101526 !important;
+    background: #161E39 !important;
     color: #b9e9ed !important;
 }
 
 
 /*Top Navigation Bar*/
 .navbar{
-    background-color: none;
+    background-color: #101526;
 }
 
 .navbar .navbar-nav{
@@ -69,7 +69,7 @@ section{
 /* Icons */
 
 .foxIcon{
-    max-width: 150px;
+    max-width: 140px;
 }
 
 .skillIcon{
@@ -89,7 +89,7 @@ section{
 }
 
 #skillRow{
-    padding: 80px 170px 10px 170px; /*top right bottom left*/
+    padding: 80px 200px 10px 200px; /*top right bottom left*/
 
 }
 
@@ -99,10 +99,15 @@ section{
     margin-top: -30px;
     padding-top: 100px;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     position: relative;
     bottom: 0;
     text-align: center;
+    background-color: #101526 !important;
+    background-image: url(images/treeBackground.svg);
+    background-position: center bottom;
+    background-size: 100%;
+    background-repeat: repeat-x;
 }
 
 .introductionText{

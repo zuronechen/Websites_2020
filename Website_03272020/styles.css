@@ -52,17 +52,18 @@ body{
 }
 
 section{
+    margin-top: -2px;
     padding-top: 50px;
     padding-bottom: 100px;
     width: 100%;
     padding-left: 70px;
-    padding-right: 60px;
+    padding-right: 70px;
     text-align: center;
     justify-content: center;
     position: relative;
 }
 
-.row{
+#skillRow{
     padding: 80px 100px 10px 100px; /*top right bottom left*/
 }   
 
@@ -118,9 +119,72 @@ section{
     font-size: 50px;
 }
 
+/*Skills*/ 
+
+#skillsSection{
+    position: relative;
+    background-image: url(images/desertBackground.svg);
+    background-position: center bottom;
+    background-size: 100%;
+    background-repeat: repeat-x;
+    padding-bottom: 300px;
+}
+
+#skillsSection p{
+    font-size: 18px;
+    text-align: justify;
+}
+
+#skill-row{
+    width: 70%;
+    display: inline-block;
+}
+
+/*Projects*/
+
+#projectsSection{
+    position: relative;
+    background: #273153;
+    background-image: url(images/fox_background_snow.svg);
+    background-position: center bottom;
+    background-size: 100%;
+    background-repeat: repeat-x;
+    padding-bottom: 500px;
+}
 /*Art*/
+
 #artSection{
     position: relative;
+    background: #ffffff;
+    background-position: center bottom;
+    background-size: 100%;
+    background-repeat: repeat-x;
+    padding-bottom: 500px;
+    color: #273153;
+}
+
+#art-row{
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.artImage{
+    display: block;  
+    max-width: 400px;
+    transition: transform .3s; /* Animation */
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+
+.artImage:hover{
+    transform: scale(1.1);
+    cursor: url('images/blueCursor.svg'), auto;	
+    box-shadow: none;
+}
+
+.artCaption{
+    display: block;
+    font-size: 2em;
 }
 
 .link{
@@ -131,35 +195,6 @@ section{
     color: #D97F4D;
 }
 
-.artImage{
-    display: inline-block;  
-    max-width: 220px;
-    transition: transform .3s; /* Animation */
-    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.2);
-    margin-bottom: 10px;
-}
 
-.artImage:hover{
-    transform: scale(1.1);
-    cursor: url('images/blueCursor.svg'), auto;	
-    box-shadow: none;
-}
-/*Skills*/ 
 
-#skillsSection{
-    position: relative;
-}
 
-#skillsSection ul li{
-    list-style: none;
-    font-size: 3vh;
-    font-weight: bold;
-} 
-
-#skillsSection .skillList{
-    padding: 5px;
-    margin: 10px;
-    border-radius: 20px;
-}
-
-/*Hello*/
